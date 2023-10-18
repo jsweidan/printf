@@ -12,5 +12,6 @@ int _strlenc(const char *str);
 int printf_char(va_list val);
 int print_37(void);
 int _printf(const char *format, ...);
+int putss(char *c);
 
 #endif
