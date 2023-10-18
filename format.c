@@ -24,9 +24,11 @@ int _printf(const char *format, ...)
 		if (format[i] == '%' && format[i + 1] == 'c')
 		{
 			_putchar(va_arg(args, int));
+			i++;
 		}
 		count += 1;
 	}
 
+	va_end(args);
 	return (count);
 }
